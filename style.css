@@ -82,37 +82,37 @@ body{
     display: none;
 }
 
-#check {
+#check{
     display: none;
 }
 
-@media (max-width: 992px) {
-    .header {
+@media (max-width: 992px){
+    .header{
         padding: 1.3rem 5%;
     }
 
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
-    .icons {
+    .icons{
         display: inline-flex;
     }
 
-    #check:checked~.icons #menu-icon {
+    #check:checked~.icons #menu-icon{
         display: none;
     }
 
-    .icons #close-icon {
+    .icons #close-icon{
         display: none;
     }
 
-    #check:checked~.icons #close-icon {
+    #check:checked~.icons #close-icon{
         display: block;
     }
 
-    .navbar {
+    .navbar{
         position: relative;
         top: 100%;
         left: 0;
@@ -124,13 +124,13 @@ body{
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
         transition: .3s ease;
         z-index: 1001;
-
+        
     }
 
-    #check:checked~.navbar {
+    #check:checked~ .navbar{
         height: 33rem;
     }
-    .navbar a {
+    .navbar a{
         display: block;
         font-size: 1.1rem;
         margin: 1.5rem 0;
@@ -138,17 +138,17 @@ body{
         transition: .3s ease;
     }
 
-    #check:checked~.navbar a {
+    #check:checked~.navbar a{
         transform: translateY(0);
         transition-delay: calc(.15s * var(--i));
-
+        
     }
-    .navbar.active {
+    .navbar.active{
         left: 0;
     }
 }
 
-.news-content {
+ .news-content {
     margin-top: 4rem;
     margin-bottom: 2rem;
     text-align:left ;
@@ -295,92 +295,4 @@ body{
     cursor: pointer;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     margin-right: 50px;
-}
-
-.content {
-    width: 70%;
-    margin: auto;
-}
-
-.main h2 {
-    color: #ff6347;
-}
-
-.main p {
-    color: #f6e4e1;
-}
-
-.navbar:after {
-    content: " ";
-    display: block;
-
-    height: 29px;
-    width: 100%;
-
-    position: absolute;
-    bottom: -29px;
-}
-
-.main {
-    margin-top: 10rem;
-    margin-bottom: 2rem;
-    text-align: left;
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.2);
-    /* Black w/opacity/see-through */
-    color: white;
-    font-weight: 100;
-    font-size: 0.7rem;
-    padding: 2rem;
-}
-
-.courses {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.courses a {
-    background-color: #f2f2f2;
-    display: block;
-    border: 1px solid #000;
-    margin: 10px 0;
-    padding: 10px;
-    height: fit-content;
-    width: calc(50% - 20px);
-    /* Adjust this as needed */
-}
-
-.all-courses h2 {
-    color: #ff6347;
-    /* Change this to the color you want */
-}
-
-footer {
-    margin-top: auto;
-
-    text-align: center;
-    padding: 20px 0;
-}
-
-.images {
-    background-color: rgba(68, 44, 44, 0.8);
-    display: flex;
-    flex-wrap: wrap;
-
-
-    justify-content: center;
-    padding: 5%;
-
-}
-
-
-.main-page {
-
-    background-color: rgba(68, 44, 44, 0.8);
-
-    padding: 5%;
-    text-align: center;
-    font-size: large;
 }
